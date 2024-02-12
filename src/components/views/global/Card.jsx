@@ -6,21 +6,16 @@ const Card = (props) => {
 
     const {title, description, price} = props
     const renderDescription = (description) => {
-        if (Array.isArray(description)) {
-            return descriptionList(description);
-        } else {
-            return descriptionP(description);
-        }
+        Array.isArray(description) ? descriptionList(description) : descriptionP(description);
     };
 
     const descriptionList = (props) => {
         return (
             <ul className="car-info">
-                {props.map(item => {
-                    return (
-                        <li className="car-info-item">{item}</li>
-                    )
-                })}
+                {props.map(item => (
+                    <li className="car-info-item" key={item}>{item}</li>
+                )
+                )}
             </ul>
         )
     }

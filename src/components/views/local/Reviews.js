@@ -23,16 +23,16 @@ function Reviews() {
             {reviews.map((item) => (
                 <SwiperSlide>
                 <div key={item.id}>
-                    <div className="div-review-name">
-                        <span className="bold-span">Name: </span>
+                    <div className={"div-review-name"}>
+                        <span className={"bold-span"}>Name: </span>
                         {item.name}
                     </div>
-                    <div className="div-review-email">
-                        <span className="bold-span">Email: </span>
+                    <div className={"div-review-email"}>
+                        <span className={"bold-span"}>Email: </span>
                         {item.email}
                     </div>
-                    <div className="div-review-body">
-                        <span className="bold-span">Body: </span>
+                    <div className={"div-review-body"}>
+                        <span className={"bold-span"}>Body: </span>
                         {item.body}
                     </div>
                 </div>
